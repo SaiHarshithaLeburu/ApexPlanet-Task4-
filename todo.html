@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>To-Do & Notes | Task 4</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            Harshitha<span>.</span>
+        </div>
+
+
+        <div class="nav-links">
+
+            <a href="index.html">Portfolio</a>
+
+            <a href="todo.html">To-Do</a>
+
+            <a href="products.html">Products</a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- TODO HEADER -->
+
+    <section class="app-header">
+
+        <p class="small-heading">
+            PRODUCTIVITY APP
+        </p>
+
+        <h1>
+            My To-Do List 📝
+        </h1>
+
+        <p>
+            Add your tasks and keep them saved in your browser.
+        </p>
+
+    </section>
+
+
+    <!-- TODO APP -->
+
+    <main class="todo-container">
+
+        <div class="todo-card">
+
+            <div class="todo-input-area">
+
+                <input
+                    type="text"
+                    id="taskInput"
+                    placeholder="What do you need to do?"
+                >
+
+                <button id="addTask">
+                    Add Task
+                </button>
+
+            </div>
+
+
+            <div class="todo-stats">
+
+                <span>
+                    Total:
+                    <strong id="totalTasks">0</strong>
+                </span>
+
+                <span>
+                    Completed:
+                    <strong id="completedTasks">0</strong>
+                </span>
+
+                <button id="clearTasks">
+                    Clear All
+                </button>
+
+            </div>
+
+
+            <ul id="taskList"></ul>
+
+
+            <p id="emptyMessage">
+                No tasks yet. Add your first task! ✨
+            </p>
+
+        </div>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            Your tasks are saved automatically using localStorage.
+        </p>
+
+    </footer>
+
+
+    <script src="todo.js"></script>
+
+</body>
+
+</html>
